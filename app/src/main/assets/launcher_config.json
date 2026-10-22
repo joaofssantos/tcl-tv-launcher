@@ -1,0 +1,15 @@
+{
+  "rokuInputId": "com.tcl.tvinput/.passthroughinput.TvPassThroughService/HW1413744128",
+  "featured": { "label": "YouTube", "package": "com.google.android.youtube.tv" },
+  "series": [
+    { "title": "The Mentalist", "subtitle": "Prime Video", "deepLink": "https://app.primevideo.com/detail?gti=0MZ27X55B8J5R468ZCH5PZ45FP" },
+    { "title": "House", "subtitle": "Prime Video", "deepLink": "https://app.primevideo.com/detail?gti=0J04VNQF9MMAGLO7BKVUF6EM9X" },
+    { "title": "Criminal Minds", "subtitle": "Prime Video + Paramount+", "deepLink": "https://app.primevideo.com/detail?gti=0OH76CLO9I7QI0T14VZZ0P1KGP" }
+  ],
+  "dock": [
+    { "label": "Netflix", "package": "com.netflix.ninja" },
+    { "label": "Prime Video", "package": "com.amazon.amazonvideo.livingroom" },
+    { "label": "Globoplay", "package": "com.globo.globotv" },
+    { "label": "YouTube Music", "package": "com.google.android.youtube.tvmusic" }
+  ]
+}

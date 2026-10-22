@@ -1,0 +1,9 @@
+*.apk
+build/
+.gradle/
+local.properties
+.superpowers/
+/.gradle/
+/build/
+/app/build/
+/local.properties
