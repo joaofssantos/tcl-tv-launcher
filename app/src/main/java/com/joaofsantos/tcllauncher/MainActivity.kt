@@ -2,7 +2,10 @@ package com.joaofsantos.tcllauncher
 
 import android.app.Activity
 import android.app.AlertDialog
+import android.content.BroadcastReceiver
+import android.content.Context
 import android.content.Intent
+import android.content.IntentFilter
 import android.content.pm.PackageManager
 import android.content.pm.ResolveInfo
 import android.graphics.Color
@@ -31,6 +34,19 @@ class MainActivity : Activity() {
         config = JSONObject(assets.open("launcher_config.json").bufferedReader().use { it.readText() })
         inputSwitcher = TvInputSwitcher(this)
         setContentView(buildHome())
+        registerReceiver(packagesChanged, IntentFilter().apply {
+            addAction(Intent.ACTION_PACKAGE_ADDED); addAction(Intent.ACTION_PACKAGE_REMOVED); addAction(Intent.ACTION_PACKAGE_CHANGED); addDataScheme("package")
+        })
+    }
+
+    override fun onDestroy() { unregisterReceiver(packagesChanged); super.onDestroy() }
+
+    // Rebuild the carousel when an app is installed, removed, enabled or disabled.
+    private val packagesChanged = object : BroadcastReceiver() {
+        override fun onReceive(context: Context, intent: Intent) {
+            setContentView(buildHome())
+            findViewById<View>(FEATURED_ID)?.requestFocus()
+        }
     }
 
     override fun onNewIntent(intent: Intent) {

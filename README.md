@@ -8,7 +8,7 @@ feito para substituir a home do Google TV cheia de propaganda.
 ## O que faz
 
 - Tela inicial com grade de 3 atalhos grandes (YouTube, Prime Video e uma entrada HDMI, ex.: Roku).
-- Carrossel com os outros apps instalados (banners oficiais + nome), sem apps internos do fabricante.
+- Carrossel com os outros apps instalados (banners oficiais + nome), sem apps internos do fabricante; atualiza sozinho quando um app é instalado ou removido.
 - Botões rápidos para trocar de entrada, Wi-Fi e configurações; navegação completa pelo controle (D-pad).
 - Cartão "Tocando agora" (MediaSession) com play/pause e próxima, só quando há algo tocando.
 - Leve: Kotlin + Views, sem rede; ~40–55 MB de memória contra ~115 MB da home do Google.
