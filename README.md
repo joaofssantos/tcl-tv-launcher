@@ -3,12 +3,13 @@
 Launcher nativo e leve para Android TV (testado numa TCL com Android TV 11, 1280×720, ~1 GB de RAM),
 feito para substituir a home do Google TV cheia de propaganda.
 
-![Tela inicial](evidence/polish-v2.png)
+![Tela inicial](evidence/qa-fixes-rail.png)
 
 ## O que faz
 
-- Tela inicial com YouTube em destaque, atalhos grandes e barra de apps com os banners oficiais.
-- Botão que troca a TV direto para uma entrada HDMI (ex.: Roku).
+- Tela inicial com grade de 3 atalhos grandes (YouTube, Prime Video e uma entrada HDMI, ex.: Roku).
+- Carrossel com os outros apps instalados (banners oficiais + nome), sem apps internos do fabricante.
+- Botões rápidos para trocar de entrada, Wi-Fi e configurações; navegação completa pelo controle (D-pad).
 - Cartão "Tocando agora" (MediaSession) com play/pause e próxima, só quando há algo tocando.
 - Leve: Kotlin + Views, sem rede; ~40–55 MB de memória contra ~115 MB da home do Google.
 
